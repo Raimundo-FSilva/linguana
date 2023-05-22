@@ -1,0 +1,2 @@
+-- AddForeignKey
+ALTER TABLE `Result` ADD CONSTRAINT `Result_alunoId_fkey` FOREIGN KEY (`alunoId`) REFERENCES `Aluno`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;

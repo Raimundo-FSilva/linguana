@@ -1,0 +1,890 @@
+[
+    [{
+            "type": "select-word",
+            "error": {
+                "type": "unique",
+                "label": "Don't"
+            },
+            "content": {
+                "points": 140,
+                "response": [
+                    "1"
+                ],
+                "options": [{
+                        "label": "Don't",
+                        "value": "1"
+                    },
+                    {
+                        "label": "Wont",
+                        "value": "2"
+                    }
+                ],
+                "content": "You won't pass the test if you $data-1 study. ",
+                "image": "quest_1_1.png"
+            }
+        },
+        {
+            "type": "select-word",
+            "error": {
+                "type": "unique",
+                "label": "Will arrive"
+            },
+            "content": {
+                "points": 140,
+                "response": [
+                    "1"
+                ],
+                "options": [{
+                        "label": "Will arrive",
+                        "value": "1"
+                    },
+                    {
+                        "label": "Arrive",
+                        "value": "2"
+                    }
+                ],
+                "content": "If I leave now, I $data-1 in Boa Vista by 6:00 PM.",
+                "image": "quest_1_2.png"
+            }
+        },
+        {
+            "type": "select-word",
+            "error": {
+                "type": "unique",
+                "label": "Were"
+            },
+            "content": {
+                "points": 140,
+                "response": [
+                    "1"
+                ],
+                "options": [{
+                        "label": "Were",
+                        "value": "1"
+                    },
+                    {
+                        "label": "would",
+                        "value": "2"
+                    }
+                ],
+                "content": "If I $data-1 you, I would get  a new classmate for the work.",
+                "image": "quest_1_3.png"
+            }
+        },
+        {
+            "type": "list-build",
+            "error": {
+                "type": "multiple",
+                "points": 100,
+                "options": 2
+            },
+            "content": {
+                "options": [{
+                        "index": "1",
+                        "points": 100,
+                        "text": "If you work hard."
+                    },
+                    {
+                        "index": "3",
+                        "points": 100,
+                        "text": "If you clean the house."
+                    }
+                ],
+                "response": [{
+                        "index": "3",
+                        "content": "You will visit your friend."
+                    },
+                    {
+                        "index": "1",
+                        "content": "You will get Money."
+                    }
+                ]
+            }
+        },
+        {
+            "type": "text-analytics",
+            "error": {
+                "type": "unique",
+                "label": "Second conditional"
+            },
+            "content": {
+                "points": 160,
+                "ref": "Beyoncé (álbum: I am... Sasha Fierce – Delux edition – 2008- composição de BC Jean/Toby gad",
+                "text": "...If $strongI$-WERE a boy $br I $strongWould$-Turn off my phone $br Tell everyone it's broken $br So they'd think that I was sleeping alone...",
+                "options": [
+                    { "label": "First conditional", "correct": false },
+                    { "label": "Second conditional", "correct": true },
+                    { "label": "Third conditional", "correct": false }
+                ]
+            }
+        },
+        {
+            "type": "double-word",
+            "error": {
+                "type": "unique",
+                "label": "Had studied / Would have got"
+            },
+            "content": {
+                "points": 100,
+                "image": "quest_1_4.png",
+                "text": "If you $data-0 English, You $data-1 the job.",
+                "options": [
+                    { "words": ["had studied", "would have got"], "correct": true },
+                    { "words": ["have studied", "would have got"], "correct": false },
+                    { "words": ["would have got", "had studied"], "correct": false }
+                ]
+            }
+        },
+        {
+            "type": "response-text",
+            "error": {
+                "type": "unique",
+                "label": "Letters are written by the secretary."
+            },
+            "content": {
+                "image": "quest_1_7.png",
+                "points": 160,
+                "question": "The secretary writes letters.",
+                "response": "Letters are written by the secretary."
+            }
+        },
+        {
+            "type": "response-text",
+            "error": {
+                "type": "unique",
+                "label": "The boss was seen by him."
+            },
+            "content": {
+                "image": "quest_1_8.png",
+                "points": 160,
+                "question": "He saw the boss.",
+                "response": "The boss was seen by him"
+            }
+        },
+        {
+            "type": "response-text",
+            "error": {
+                "type": "unique",
+                "label": "A new job was offered to Maria."
+            },
+            "content": {
+                "image": "quest_1_9.png",
+                "points": 160,
+                "question": "Maria was offered a new job.",
+                "response": "A new job was offered to Maria."
+            }
+        },
+        {
+            "type": "true-our-false",
+            "error": {
+                "type": "unique",
+                "label": "Passive voice"
+            },
+            "content": {
+                "trueLabel": "Active voice",
+                "falseLabel": "Passive voice",
+                "image": "quest_1_10.png",
+                "points": 100,
+                "question": "The homework was done by the students.",
+                "response": false
+            }
+        },
+        {
+            "type": "true-our-false",
+            "error": {
+                "type": "unique",
+                "label": "Passive voice"
+            },
+            "content": {
+                "trueLabel": "Active voice",
+                "falseLabel": "Passive voice",
+                "image": "quest_1_11.png",
+                "points": 100,
+                "question": "The secretary sent the e-mail.",
+                "response": true
+            }
+        },
+        {
+            "type": "true-our-false",
+            "error": {
+                "type": "unique",
+                "label": "Passive voice"
+            },
+            "content": {
+                "trueLabel": "Active voice",
+                "falseLabel": "Passive voice",
+                "image": "quest_1_12.png",
+                "points": 100,
+                "question": "The test was sent by the student. ",
+                "response": false
+            }
+        },
+        {
+            "type": "texts-constructor",
+            "error": {
+                "type": "multiple",
+                "points": 100,
+                "options": 3
+            },
+            "content": {
+                "texts": [
+                    { "text": "Is Lisa at work? She asked me if", "points": 100 },
+                    { "text": "Is she late? He asked me if", "points": 100 },
+                    { "text": "Is the school near here? She asked me if ", "points": 100 }
+                ],
+                "options": [
+                    { "label": "lisa was at work.", "quest": 0 },
+                    { "label": "the school was near here.", "quest": 2 },
+                    { "label": "she was late.", "quest": 1 }
+                ]
+            }
+        },
+        {
+            "type": "dialog-complet",
+            "error": {
+                "type": "multiple",
+                "points": 160,
+                "options": 3
+            },
+            "content": {
+                "messages": [{
+                        "en": "Hey, João, $data-0 you ever $data-1 English? ",
+                        "points": 160,
+                        "image": "quest_1_14.png",
+                        "options": [
+                            { "words": ["Have", "Studied"], "correct": true },
+                            { "words": ["Has", "Studied"], "correct": false },
+                            { "words": ["Had", "Studied"], "correct": false }
+                        ]
+                    },
+                    {
+                        "en": "Yes, Maria. I $data-0 English in the past.",
+                        "points": 160,
+                        "image": "quest_1_14.png",
+                        "options": [
+                            { "words": ["Has Studied"], "correct": false },
+                            { "words": ["Have Studied"], "correct": true },
+                            { "words": ["Had Studied"], "correct": false }
+                        ]
+                    },
+                    {
+                        "en": "Cool! And when was that?",
+                        "image": "quest_01.png",
+                        "disabled": true
+                    },
+                    {
+                        "en": "Oh, I $data-0 English a long time ago, back in 2005.",
+                        "points": 160,
+                        "image": "quest_1_14.png",
+                        "options": [
+                            { "words": ["Studied"], "correct": true },
+                            { "words": ["Has studied"], "correct": true },
+                            { "words": ["Have studied"], "correct": true }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "true-our-false",
+            "error": {
+                "type": "unique",
+                "label": "Present Perfect"
+            },
+            "content": {
+                "trueLabel": "Present Perfect",
+                "falseLabel": "Past Perfect",
+                "image": "quest_1_15.png",
+                "points": 140,
+                "question": "I have worked as teacher in the past.",
+                "response": true
+            }
+        },
+        {
+            "type": "true-our-false",
+            "error": {
+                "type": "unique",
+                "label": "Past Perfect"
+            },
+            "content": {
+                "trueLabel": "Present Perfect",
+                "falseLabel": "Past Perfect",
+                "image": "quest_1_16.png",
+                "points": 140,
+                "question": "I worked as a teacher in 1995.",
+                "response": false
+            }
+        }
+    ],
+    [{
+            "type": "select-word",
+            "error": {
+                "type": "unique",
+                "label": "Scribes"
+            },
+            "content": {
+                "points": 140,
+                "response": [
+                    "1"
+                ],
+                "options": [{
+                        "label": "Scribes",
+                        "value": "1"
+                    },
+                    {
+                        "label": "Slaves",
+                        "value": "2"
+                    },
+                    {
+                        "label": "Secretaries",
+                        "value": "3"
+                    }
+                ],
+                "content": "$data-1 Person responsible for writing, such as copyist, secretary or editor. Doctor of Law among the Jews. Clerk.",
+                "image": "quest_2_1.png"
+            }
+        },
+        {
+            "type": "list-build",
+            "error": {
+                "type": "multiple",
+                "points": 140,
+                "options": 4
+            },
+            "content": {
+                "options": [{
+                        "index": "1",
+                        "points": 140,
+                        "text": "Boss"
+                    },
+                    {
+                        "index": "2",
+                        "points": 140,
+                        "text": "Coworker"
+                    },
+                    {
+                        "index": "3",
+                        "points": 140,
+                        "text": "Secretary"
+                    },
+                    {
+                        "index": "4",
+                        "points": 140,
+                        "text": "Office boy"
+                    }
+                ],
+                "response": [{
+                        "index": "3",
+                        "content": "Secretária"
+                    },
+                    {
+                        "index": "1",
+                        "content": "Chefe."
+                    },
+                    {
+                        "index": "4",
+                        "content": "Ajudante de escritório."
+                    },
+                    {
+                        "index": "2",
+                        "content": "Colega de trabalho"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "list-build",
+            "error": {
+                "type": "multiple",
+                "points": 140,
+                "options": 4
+            },
+            "content": {
+                "options": [{
+                        "index": "1",
+                        "points": 140,
+                        "text": "Diary"
+                    },
+                    {
+                        "index": "2",
+                        "points": 140,
+                        "text": "Folder"
+                    },
+                    {
+                        "index": "3",
+                        "points": 140,
+                        "text": "Hole-puncher"
+                    },
+                    {
+                        "index": "4",
+                        "points": 140,
+                        "text": "Sharpener"
+                    }
+                ],
+                "response": [{
+                        "index": "4",
+                        "content": "Apontador "
+                    },
+                    {
+                        "index": "3",
+                        "content": "Perfurador de papel"
+                    },
+                    {
+                        "index": "2",
+                        "content": "Pasta, arquivo"
+                    },
+                    {
+                        "index": "1",
+                        "content": "Agenda"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "list-build",
+            "error": {
+                "type": "multiple",
+                "points": 140,
+                "options": 4
+            },
+            "content": {
+                "options": [{
+                        "index": "1",
+                        "points": 140,
+                        "text": "Chair"
+                    },
+                    {
+                        "index": "2",
+                        "points": 140,
+                        "text": "Coffee machine"
+                    },
+                    {
+                        "index": "3",
+                        "points": 140,
+                        "text": "Computer"
+                    },
+                    {
+                        "index": "4",
+                        "points": 140,
+                        "text": "Desk"
+                    }
+                ],
+                "response": [{
+                        "index": "4",
+                        "content": "Mesa"
+                    },
+                    {
+                        "index": "1",
+                        "content": "Cadeira"
+                    },
+                    {
+                        "index": "2",
+                        "content": "Máquina de café"
+                    },
+                    {
+                        "index": "3",
+                        "content": "Computador"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "select-word",
+            "error": {
+                "type": "unique",
+                "label": "Boss"
+            },
+            "content": {
+                "points": 140,
+                "response": [
+                    "1"
+                ],
+                "options": [{
+                        "label": "Boss",
+                        "value": "1"
+                    },
+                    {
+                        "label": "Cat",
+                        "value": "2"
+                    },
+                    {
+                        "label": "Desk",
+                        "value": "3"
+                    }
+                ],
+                "content": "The $data-1 had a brilliant idea.",
+                "image": "quest_2_5.png"
+            }
+        },
+        {
+            "type": "select-word",
+            "error": {
+                "type": "unique",
+                "label": "Office"
+            },
+            "content": {
+                "points": 140,
+                "response": [
+                    "1"
+                ],
+                "options": [{
+                        "label": "Office",
+                        "value": "1"
+                    },
+                    {
+                        "label": "Chair",
+                        "value": "2"
+                    },
+                    {
+                        "label": "Pencil",
+                        "value": "3"
+                    }
+                ],
+                "content": "The $data-1 was cleaned and organized yesterday. ",
+                "image": "quest_2_6.png"
+
+            }
+        },
+        {
+            "type": "select-word",
+            "error": {
+                "type": "unique",
+                "label": "File"
+            },
+            "content": {
+                "points": 140,
+                "response": [
+                    "1"
+                ],
+                "options": [{
+                        "label": "File",
+                        "value": "1"
+                    },
+                    {
+                        "label": "Apple",
+                        "value": "2"
+                    },
+                    {
+                        "label": "Secretary",
+                        "value": "3"
+                    }
+                ],
+                "content": "I can’t find my $data-1 on my computer! I Think I deleted it.",
+                "image": "quest_2_7.png"
+            }
+        },
+        {
+            "type": "select-correct",
+            "description": "Leia o conteúdo para responder a questão:",
+            "error": {
+                "type": "unique",
+                "label": "Greece"
+            },
+            "content": {
+                "points": 160,
+                "modal": {
+                    "label": "Conteúdo",
+                    "type": "EGYP"
+                },
+                "question": "Quanto às origens dos eventos, onde ocorreu a primeira cerimônia?",
+                "options": [{
+                        "label": "England",
+                        "correct": false
+                    },
+                    {
+                        "label": "Greece",
+                        "correct": true
+                    },
+                    {
+                        "label": "Italy",
+                        "correct": false
+                    }
+                ],
+                "image": "quest_2_8.png"
+            }
+        },
+        {
+            "type": "select-word",
+            "error": {
+                "type": "unique",
+                "label": "Conferences"
+            },
+            "content": {
+                "points": 160,
+                "response": [
+                    "1"
+                ],
+                "options": [{
+                        "label": "Conferences",
+                        "value": "1"
+                    },
+                    {
+                        "label": "Seminars",
+                        "value": "2"
+                    },
+                    {
+                        "label": "Meetings",
+                        "value": "3"
+                    }
+                ],
+                "content": "$data-1 are popular and important business events. Everything about the event management of academic, medical and business conferences.",
+                "image": "quest_2_9.png"
+
+            }
+        },
+        {
+            "type": "select-word",
+            "error": {
+                "type": "unique",
+                "label": "Seminars"
+            },
+            "content": {
+                "points": 160,
+                "response": [
+                    "2"
+                ],
+                "options": [{
+                        "label": "Conferences",
+                        "value": "1"
+                    },
+                    {
+                        "label": "Seminars",
+                        "value": "2"
+                    },
+                    {
+                        "label": "Meetings",
+                        "value": "3"
+                    }
+                ],
+                "content": "$data-1 are educational events for the training of managers and employees. Most seminars are not comparable with boring lectures. Interactivity is core!",
+                "image": "quest_2_10.png"
+            }
+        },
+        {
+            "type": "select-word",
+            "error": {
+                "type": "unique",
+                "label": "Meetings"
+            },
+            "content": {
+                "points": 160,
+                "response": [
+                    "3"
+                ],
+                "options": [{
+                        "label": "Conferences",
+                        "value": "1"
+                    },
+                    {
+                        "label": "Seminars",
+                        "value": "2"
+                    },
+                    {
+                        "label": "Meetings",
+                        "value": "3"
+                    }
+                ],
+                "content": "$data-1 are common business events in large companies, perfect to discuss operational and financial strategies. ",
+                "image": "quest_2_11.png"
+            }
+        },
+        {
+            "type": "select-word",
+            "description": "Completa a frase definindo o conceito",
+            "error": {
+                "type": "unique",
+                "label": "Etiqueta"
+            },
+            "content": {
+                "textSmall": true,
+                "points": 160,
+                "response": [
+                    "1"
+                ],
+                "options": [{
+                        "label": "Cerimonial",
+                        "value": "1"
+                    },
+                    {
+                        "label": "Protocolo",
+                        "value": "2"
+                    },
+                    {
+                        "label": "Etiqueta",
+                        "value": "3"
+                    }
+                ],
+                "content": "$data-1 It’s the set of specific formalities of a public act/event, arranged in a sequential order, which involves the order of precedence.",
+                "image": "quest_2_12.png"
+            }
+        },
+        {
+            "type": "select-word",
+            "description": "Completa a frase definindo o conceito",
+            "error": {
+                "type": "unique",
+                "label": "Cerimonial"
+            },
+            "content": {
+                "textSmall": true,
+                "points": 160,
+                "response": [
+                    "2"
+                ],
+                "options": [{
+                        "label": "Cerimonial",
+                        "value": "1"
+                    },
+                    {
+                        "label": "Protocolo",
+                        "value": "2"
+                    },
+                    {
+                        "label": "Etiqueta",
+                        "value": "3"
+                    }
+                ],
+                "content": "$data-1 Establishes the rules to be followed at an event, indicates the place of each authority in official ceremonies, based on positions and functions of each one, establishing a hierarchical order.",
+                "image": "quest_2_13.png"
+            }
+        },
+        {
+            "type": "select-word",
+            "description": "Complete a frase definindo o conceito",
+            "error": {
+                "type": "unique",
+                "label": "Etiqueta"
+            },
+            "content": {
+                "textSmall": true,
+                "points": 160,
+                "response": [
+                    "3"
+                ],
+                "options": [{
+                        "label": "Cerimonial",
+                        "value": "1"
+                    },
+                    {
+                        "label": "Protocolo",
+                        "value": "2"
+                    },
+                    {
+                        "label": "Etiqueta",
+                        "value": "3"
+                    }
+                ],
+                "content": "$data-1 “Phenomenon of popular culture with characteristics of cordiality and hospitality linked to the norms of refined personal behavior”.",
+                "image": "quest_2_15.png"
+
+            }
+        },
+        {
+            "type": "flags",
+            "error": {
+                "type": "multiple",
+                "points": 140,
+                "options": 4
+            }
+        },
+        {
+            "type": "select-correct",
+            "description": "Clique na palavra correspondente a descrição na frase.",
+            "error": {
+                "type": "unique",
+                "label": "Master of Ceremonies"
+            },
+            "content": {
+                "points": 160,
+                "modal": {
+                    "label": "Vocabulário",
+                    "type": "VOC"
+                },
+                "question": "Is the professional with a good diction and have a minimum knowledge of the norms and rules that govern the solemnities.",
+                "options": [{
+                        "label": "Master of Ceremonies",
+                        "correct": true
+                    },
+                    {
+                        "label": "Head of the cerimonial ",
+                        "correct": false
+                    },
+                    {
+                        "label": "Receptionist",
+                        "correct": false
+                    }
+                ],
+                "image": "quest_2_16.png"
+            }
+        },
+        {
+            "type": "select-correct",
+            "description": "Clique na palavra correspondente a descrição na frase.",
+            "error": {
+                "type": "unique",
+                "label": "Head of the cerimonial"
+            },
+            "content": {
+                "points": 160,
+                "modal": {
+                    "label": "Vocabulário",
+                    "type": "VOC"
+                },
+                "question": "Is the professional responsible for the organization/advising of the cerimonial.",
+                "options": [{
+                        "label": "Master of Ceremonies",
+                        "correct": false
+                    },
+                    {
+                        "label": "Head of the cerimonial",
+                        "correct": true
+                    },
+                    {
+                        "label": "Receptionist",
+                        "correct": false
+                    }
+                ],
+                "image": "quest_2_17.png"
+            }
+        },
+        {
+            "type": "select-correct",
+            "description": "Clique na palavra correspondente a descrição na frase.",
+            "error": {
+                "type": "unique",
+                "label": "Receptionist"
+            },
+            "content": {
+                "points": 160,
+                "modal": {
+                    "label": "Vocabulário",
+                    "type": "VOC"
+                },
+                "question": "Is the profissional who makes the first contact with the event visitor.",
+                "options": [{
+                        "label": "Master of Ceremonies",
+                        "correct": false
+                    },
+                    {
+                        "label": "Head of the cerimonial ",
+                        "correct": false
+                    },
+                    {
+                        "label": "Receptionist",
+                        "correct": true
+                    }
+                ],
+                "image": "quest_2_18.png"
+            }
+        },
+        {
+            "type": "words-cruzed",
+            "description": "Responda a palavra cruzada.",
+            "error": {
+                "type": "multiple",
+                "points": 160,
+                "options": 5
+            }
+        }
+    ]
+]

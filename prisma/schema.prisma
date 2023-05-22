@@ -1,0 +1,39 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Aluno {
+ id String @id @unique @default(uuid())
+ nome String
+ turma String
+ nascimento String
+ matricula String @unique
+ avatar Int
+
+ results Result[]
+}
+
+model Result {
+  id String @id @default(uuid()) @unique
+
+  alunoId String 
+  desafio Int
+  points Int
+  time Int
+  
+  correct Int
+  incorrect Int
+
+  aluno Aluno @relation(fields: [alunoId], references: [id])
+
+  createdAt DateTime @default(now())
+}
