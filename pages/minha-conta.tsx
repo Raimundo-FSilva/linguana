@@ -71,7 +71,7 @@ export const MinhaConta = () => {
           <input
             style={{border: "1px solid #CCCCCC"}}
             spellCheck={false}
-            placeholder={"CPF (Somnte numeros...)"}
+            placeholder={"CPF (somente números)"}
             value={matricula}
             maxLength={11}
             onChange={(e) => maskMatricula(e.target.value)}
