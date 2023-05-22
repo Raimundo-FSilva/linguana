@@ -22,7 +22,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       where: {nome, matricula, turma, nascimento}
     })
 
-    if(matricula.length !== 13)
+    if(matricula.length !== 11)
       return res.status(400).send({error: "A matricula informada é inválida!"});
 
     if(!aluno) {

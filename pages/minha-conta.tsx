@@ -71,9 +71,9 @@ export const MinhaConta = () => {
           <input
             style={{border: "1px solid #CCCCCC"}}
             spellCheck={false}
-            placeholder={"Matricula"}
+            placeholder={"CPF (Somnte numeros...)"}
             value={matricula}
-            maxLength={13}
+            maxLength={11}
             onChange={(e) => maskMatricula(e.target.value)}
             className={"bg-[#FAFAFA] w-full rounded-[4px] outline-0 h-10 font-sora text-sm px-3"}
             name={"matricula"}
