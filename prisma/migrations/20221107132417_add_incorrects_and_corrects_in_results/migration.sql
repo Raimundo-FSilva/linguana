@@ -6,5 +6,10 @@
 
 */
 -- AlterTable
-ALTER TABLE `Result` ADD COLUMN `correct` INTEGER NOT NULL,
-    ADD COLUMN `incorrect` INTEGER NOT NULL;
+-- ALTER TABLE `Result` ADD COLUMN `correct` INTEGER NOT NULL,
+--     ADD COLUMN `incorrect` INTEGER NOT NULL;
+
+ALTER TABLE Result
+ADD COLUMN correct INTEGER NOT NULL,
+ADD COLUMN incorrect INTEGER NOT NULL;
+
