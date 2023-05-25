@@ -102,7 +102,7 @@ export const QuestionSelectWord = (props: Props) => {
   const context = React.useContext(questionsContext)
 
   useEffect(() => {
-    context.setDescriptionQuest(props.description || "Selecione a palavra correspondente:")
+    context.setDescriptionQuest(props.description || "Responda a palavra cruzada:")
   })
 
   const handleResponde = (value: string) => setResponseData(value)
