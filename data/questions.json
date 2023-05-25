@@ -317,7 +317,15 @@
         }
     ],
 
-    [ 
+    [{
+        "type": "words-cruzed",
+        "description": "Responda a palavra cruzada.",
+        "error": {
+            "type": "multiple",
+            "points": 160,
+            "options": 5
+        }
+    },
         {
             "type": "select-word",
             "error": {
@@ -880,15 +888,6 @@
                     }
                 ],
                 "image": "quest_2_18.png"
-            }
-        },
-        {
-            "type": "words-cruzed",
-            "description": "Responda a palavra cruzada.",
-            "error": {
-                "type": "multiple",
-                "points": 160,
-                "options": 5
             }
         }
         
