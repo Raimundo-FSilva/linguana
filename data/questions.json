@@ -789,7 +789,7 @@
         },
         {
             "type": "select-correct",
-            "description": "Clique na palavra correspondente a descrição na frase.",
+            "description": "Clique na palavra correspondente a descrição na frase. 1",
             "error": {
                 "type": "unique",
                 "label": "Master of Ceremonies"
@@ -819,7 +819,7 @@
         },
         {
             "type": "select-correct",
-            "description": "Clique na palavra correspondente a descrição na frase.",
+            "description": "Clique na palavra correspondente a descrição na frase. 2",
             "error": {
                 "type": "unique",
                 "label": "Head of the cerimonial"
@@ -849,7 +849,7 @@
         },
         {
             "type": "select-correct",
-            "description": "Clique na palavra correspondente a descrição na frase.",
+            "description": "Clique na palavra correspondente a descrição na frase. 3",
             "error": {
                 "type": "unique",
                 "label": "Receptionist"
