@@ -161,8 +161,7 @@ export const WordCruzed = (props: {onResult: (points: number) => void}) => {
         <div className="w-full h-full flex items-center gap-7 max-sm:flex-col max-sm:py-4">
             <div className="flex flex-wrap shrink-0 w-full max-w-[380px] bg-slate-100 p-4 rounded-md">
             <div className="flex flex-wrap shrink-0 w-full max-w-[380px] bg-slate-100 p-4 rounded-md">
-            <span className="font-semibold text-slate-700"><h3>Responda a palavra cruzada.</h3></span>
-            <h3>Responda a palavra cruzada.</h3></div>
+            <span className="font-semibold text-slate-700"><h2>Responda a palavra cruzada.</h2></span>
                 {
                     data.builder.map((word, index) => {
 
@@ -182,7 +181,6 @@ export const WordCruzed = (props: {onResult: (points: number) => void}) => {
             </div>
             <div className="w-full flex flex-col h-full gap-6 py-4">
                 <div>
-                    <span className="font-semibold text-slate-700">Horizontal</span>
                     <span className="font-semibold text-slate-700">Horizontal</span>
                     <ul className="flex flex-col gap-3 mt-2">
                         <li className="text-slate-500 text-xs">
