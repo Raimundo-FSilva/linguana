@@ -574,6 +574,15 @@
             }
         },
         {
+            "type": "words-cruzed",
+            "description": "Responda a palavra cruzada.",
+            "error": {
+                "type": "multiple",
+                "points": 160,
+                "options": 5
+            }
+        },
+        {
             "type": "select-correct",
             "description": "Leia o conteúdo para responder a questão:",
             "error": {
@@ -847,15 +856,7 @@
                 "image": "quest_2_17.png"
             }
         },
-        {
-            "type": "words-cruzed",
-            "description": "Responda a palavra cruzada.",
-            "error": {
-                "type": "multiple",
-                "points": 160,
-                "options": 5
-            }
-        },
+        
         {
             "type": "select-correct",
             "description": "Clique na palavra correspondente a descrição na frase. 3",
