@@ -62,7 +62,6 @@ const Finish = () => {
     )
 
 
-
     return(
         <div className="bg-[#00D930] min-h-screen flex justify-center py-14 max-sm:px-6">
             <div className="bg-white w-[700px] px-20  max-sm:px-10 max-sm:pt-12 max-sm:pb-8 rounded-xl h-full max-h-[1200px] flex flex-col justify-between items-center pt-20 pb-12">
