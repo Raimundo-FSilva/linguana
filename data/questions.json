@@ -317,15 +317,7 @@
         }
     ],
 
-    [ {
-        "type": "words-cruzed",
-        "description": "Responda a palavra cruzada.",
-        "error": {
-            "type": "multiple",
-            "points": 160,
-            "options": 5
-        }
-    },
+    [ 
         {
             "type": "select-word",
             "error": {
@@ -801,7 +793,7 @@
         },
         {
             "type": "select-correct",
-            "description": "Clique na palavra correspondente a descrição na frase. 1",
+            "description": "Clique na palavra correspondente a descrição na frase.",
             "error": {
                 "type": "unique",
                 "label": "Master of Ceremonies"
@@ -831,7 +823,7 @@
         },
         {
             "type": "select-correct",
-            "description": "Clique na palavra correspondente a descrição na frase. 2",
+            "description": "Clique na palavra correspondente a descrição na frase.",
             "error": {
                 "type": "unique",
                 "label": "Head of the cerimonial"
@@ -862,7 +854,7 @@
         
         {
             "type": "select-correct",
-            "description": "Clique na palavra correspondente a descrição na frase. 3",
+            "description": "Clique na palavra correspondente a descrição na frase.",
             "error": {
                 "type": "unique",
                 "label": "Receptionist"
@@ -888,6 +880,15 @@
                     }
                 ],
                 "image": "quest_2_18.png"
+            }
+        },
+        {
+            "type": "words-cruzed",
+            "description": "Responda a palavra cruzada.",
+            "error": {
+                "type": "multiple",
+                "points": 160,
+                "options": 5
             }
         }
         
