@@ -158,8 +158,9 @@ export const WordCruzed = (props: {onResult: (points: number) => void}) => {
     
 
     return(
+        <h4><span className="font-semibold text-slate-700">Responda a palavra cruzada.</span></h4>
         <div className="w-full h-full flex items-center gap-7 max-sm:flex-col max-sm:py-4">
-            <h4><span className="font-semibold text-slate-700">Responda a palavra cruzada.</span></h4>
+            
 
             <div className="flex flex-wrap shrink-0 w-full max-w-[380px] bg-slate-100 p-4 rounded-md">
                 {
